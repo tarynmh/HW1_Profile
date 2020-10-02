@@ -1,0 +1,168 @@
+<!-- Taryn Hovenkamp & Jamie Joung (partner) -->
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Add New Interest</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+      </head>
+
+      <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark mr-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="mypage.html">My Page (HTML)</a>
+            </li>
+          </ul>
+            <ul class="nav-bar nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/tarynmh"><img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" alt="Github Logo" style="width:40px;">
+              </a>
+            </li>
+        
+          </ul>
+        </nav>
+
+          <h1>Add New Interest</h1>
+          <div class="container">
+        <form>
+            <div class="container form-group col-sm-10">
+                <label for="interest">Interest Name</label>
+                <input type="text" class="form-control" d="interest" aria-describedby="emailHelp" placeholder="Name">
+                </div>
+            <div class="container form-group col-sm-10">
+                <label for="interestText">Text About Interest</label>
+                <textarea class="form-control form-control-lg" id="textAreaInterest" rows="3"></textarea>
+              </div>
+
+              <div class="form-group row">
+
+                <div class="container mt-3 col-sm-4">
+                  <form action="/action_page.php">
+                   <label>Upload Local Image:</label>
+                    <input type="file" id="myFile" name="filename2">
+                  </form>
+                </div>
+  
+  
+                <div class="form-group container col-sm-4 mt-4">
+                  <select id="inputTweet" class="form-control">
+                    <option selected>Select Number of Tweets to Display</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+                
+                
+                <!-- <div class="container mt-3 col-sm-4">
+                <form action="/action_page.php">
+                 <label>Upload Local Image:</label>
+                  <input type="file" id="myFile" name="filename2">
+                </form>
+              </div>
+
+
+              <div class="form-group col-sm-4 mt-4">
+                <select id="inputTweet" class="form-control">
+                  <option selected>Select Number of Tweets to Display</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+               -->
+
+
+              <!-- <div class="container dropdown col-sm-4 mt-5">
+                <button class="btn btn-secondary dropdown-toggle dropButton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Number of Tweets to Display
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                </div>
+              </div>
+            </div> -->
+
+
+            <div class="container col-sm-10">
+            <fieldset class="form-group">
+                <label for="input_id">On a scale of 1-5, how interested in this are you?</label> 
+                <div class=" col-sm-4">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="interestRating" id="interestRating1" value="option1" checked>
+                        <label class="form-check-label" for="interestRating1">
+                        1
+                        </label>
+                    </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interestRating" id="interestRating2" value="option2">
+                <label class="form-check-label" for="interestRating2">
+                  2
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interestRating" id="interestRating3" value="option3">
+                <label class="form-check-label" for="interestRating3">
+                  3
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interestRating" id="interestRating4" value="option4">
+                <label class="form-check-label" for="interestRating4">
+                  4
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interestRating" id="interestRating5" value="option5" >
+                <label class="form-check-label" for="interestRating5">
+                  5
+                </label>
+              </div>
+            </div>
+            
+            </fieldset>
+        </div>
+
+            <div class="form-group container row">
+              <div class="container form-group col-sm-4">
+                <label for="username">Login to Finish Submitting</label>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+              </div>
+              <div class="container form-group col-sm-4">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="Password">
+              </div>
+            </div>
+
+              
+              <div class="mt-3">
+                <a href="index.html" type="submit" class="btn btn-light formButton">Submit</a>
+              </div>
+            </form>
+        </div>
+
+
+        
+      </body>
+    </html>

@@ -1,0 +1,89 @@
+/* Taryn Hovenkamp & Jamie Joung (partner) */
+table, th, td
+{
+    border: 1px solid black;
+}
+
+body
+{
+    /* background-color:#ebeef2; */
+    background-image: url('https://66.media.tumblr.com/46236b7c6c0d40fe5754e149feb07854/220a0a46536637eb-c3/s2048x3072_c222,0,99778,99921/b61d22f97b8a3276c374af973711e5f6123dcac5.gif');
+    background-size: cover;
+}
+
+img {
+    animation: spin 1s infinite linear;
+}
+
+footer {
+    text-align: center;
+}
+
+/* @keyframes spin {
+    0% {transform: rotate3d(1,1,1,0deg);  filter: hue-rotate(0deg)}
+    50% {transform: rotate3d(1,1,1,180deg);  filter: hue-rotate(180deg)}
+    100% {transform: rotate3d(1,1,1, 360deg);  filter: hue-rotate(360deg)}
+} */
+
+
+.btn-light
+{
+    margin-left: 83%;
+
+}
+
+.cara
+{
+    margin-bottom: 50%;
+}
+
+
+.bg 
+{
+    /* background-image: url("https://64.media.tumblr.com/8a9aff13644682ee4871054c774d3c0e/c0dc0fde532a782f-26/s2048x3072/69c0acad791a5197e94e54b7e6be6a1ebaa7118c.png");  */ 
+    height: 100vh;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+  }
+
+  .slideOne 
+  {
+      margin-bottom: 70%;
+      margin-right: 50%;
+  }
+
+.formButton{
+    margin-left: 8.5%;
+}
+
+.dropButton{
+    margin-right: 30%;
+}
+
+.rowMove {
+    margin-right: 50%;
+}
+
+/* .navBarText {
+    font-size: 2rem;
+} */
+
+.cardMove {
+    margin-bottom: 5%;
+}
+
+
+.captionText {
+    color: black;
+}
+
+.bigText {
+    font-size: 2rem;
+}
+
+.nav {
+    z-index: 100;
+}
